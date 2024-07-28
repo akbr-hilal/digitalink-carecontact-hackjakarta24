@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use("/api/v1/dglserver", router);
+app.use("/api/jakarta2024", router);
 app.use("/uploads", express.static('uploads'))
 app.get("/", (req, res) => {
     res.status(200).send("Running")
